@@ -1,0 +1,5 @@
+package org.malleswara.spring.springorm;
+
+public class ProductTest {
+
+}

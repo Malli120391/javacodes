@@ -1,0 +1,5 @@
+package com.malleswara.spring.springmvcorm.user.dao;
+
+public interface UserDao {
+
+}

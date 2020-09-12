@@ -1,0 +1,7 @@
+package com.malleswara.spring.springmvcorm.user.dao.impl;
+
+import com.malleswara.spring.springmvcorm.user.dao.UserDao;
+
+public class UserDaoimpl implements UserDao {
+
+}

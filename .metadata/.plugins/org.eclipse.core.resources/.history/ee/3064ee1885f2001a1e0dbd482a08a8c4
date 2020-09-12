@@ -1,0 +1,5 @@
+package com.malleswara.spring.springmvcorm.user.services;
+
+public class UserServicesimpl implements UserServices {
+
+}

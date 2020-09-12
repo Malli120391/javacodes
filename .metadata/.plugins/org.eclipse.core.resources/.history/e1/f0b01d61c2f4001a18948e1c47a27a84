@@ -1,0 +1,16 @@
+package org.malleswara.spring.springaop.aspects;
+
+import org.aopalliance.intercept.Joinpoint;
+import org.aspectj.lang.annotation.Aspect;
+import org.aspectj.lang.annotation.Before;
+
+@Aspect
+public class LogginAspect {
+	
+	@Before("")
+	public void logBefore(Joinpoint joinPoint) {
+		System.out.println("Before calling the method");
+		
+	}
+
+}

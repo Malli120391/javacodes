@@ -1,0 +1,5 @@
+package org.malleswara.spring.springjavaconfig;
+
+public class DaoConfig {
+
+}

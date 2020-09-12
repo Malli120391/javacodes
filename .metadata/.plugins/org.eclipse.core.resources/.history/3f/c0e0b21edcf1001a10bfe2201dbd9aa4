@@ -1,0 +1,45 @@
+package com.malleswara.springmvc.controller;
+
+import java.util.ArrayList;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.servlet.ModelAndView;
+
+import com.malleswara.springmvc.dto.Employee;
+
+@Controller
+public class ListObject {
+	
+	@RequestMapping("/readList")
+	public ModelAndView sendoject() {
+	
+	ModelAndView modelAndView = new ModelAndView();
+
+	modelAndView.setViewName("dispalyList");
+	
+	Employee employees = new Employee();
+	employees.setId(10);
+	employees.setName("Malleswara");
+	employees.setSalary(10000);
+	
+	Employee employees1 = new Employee();
+	employees1.setId(11);
+	employees1.setName("Venkat");
+	employees1.setSalary(20000);
+	
+	Employee employees2 = new Employee();
+	employees2.setId(12);
+	employees2.setName("Naresh");
+	employees2.setSalary(30000);
+	
+	ArrayList<Employee> employee = new ArrayList<Employee>();
+	
+	modelAndView.addObject("employee",employee);
+	
+	
+	  return modelAndView;
+}
+	
+
+}

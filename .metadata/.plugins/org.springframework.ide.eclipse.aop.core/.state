@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aop-reference-model>
+<aop-project name="springaop"/>
+<aop-project name="springjavaconfig"/>
+<aop-project name="springcoreadvaanced"/>
+<aop-project name="springorm"/>
+<aop-project name="springmvc"/>
+<aop-project name="springbootweb"/>
+<aop-project name="springmvcorm">
+<aspect-definition advice-class-name="org.springframework.transaction.interceptor.TransactionInterceptor" advice-method-name="invoke" advice-method-parameter-types="org.aopalliance.intercept.MethodInvocation" advice-type="AROUND" aspect-end-line-number="13" aspect-name="org.springframework.transaction.interceptor.TransactionInterceptor#springmvcorm#src/main/webapp/WEB-INF/dispatcher-servlet.xml#13" aspect-start-line-number="13" factory-id="org.springframework.ide.eclipse.aop.core.javaAdvisorDefinitionElementFactory" file="/springmvcorm/src/main/webapp/WEB-INF/dispatcher-servlet.xml" pointcut-expression="(@within(org.springframework.transaction.annotation.Transactional) || @annotation(org.springframework.transaction.annotation.Transactional)) &amp;&amp; execution(* *..*(..))" proxy-target-class="false">
+<aop-reference advice-type="AROUND" bean="1:BeansModel|2:springmvcorm|3:src/main/webapp/WEB-INF/dispatcher-servlet.xml|7:beans:11|8:userServicesimpl:11" bean-file="/springmvcorm/src/main/webapp/WEB-INF/dispatcher-servlet.xml" bean-start-line="11" factory-id="org.springframework.ide.eclipse.aop.core.aopReferenceElementFactory" file="/springmvcorm/src/main/webapp/WEB-INF/dispatcher-servlet.xml" source="=springmvcorm/C:\/Users\/vamsi\/.m2\/repository\/org\/springframework\/spring-tx\/4.3.6.RELEASE\/spring-tx-4.3.6.RELEASE.jar=/maven.pomderived=/true=/=/org.eclipse.jst.component.dependency=/\/WEB-INF\/lib=/=/maven.pomderived=/true=/=/org.eclipse.jst.component.archivename=/spring-tx-4.3.6.RELEASE.jar=/=/maven.groupId=/org.springframework=/=/maven.artifactId=/spring-tx=/=/maven.version=/4.3.6.RELEASE=/=/maven.scope=/compile=/&lt;org.springframework.transaction.interceptor(TransactionInterceptor.class[TransactionInterceptor~invoke~Lorg.aopalliance.intercept.MethodInvocation;" source-start-line="-1" target="=springmvcorm/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;com.malleswara.spring.springmvcorm.user.services{UserServicesimpl.java[UserServicesimpl~save~QUser;" target-start-line="29"/>
+</aspect-definition>
+</aop-project>
+<aop-project name="springboot"/>
+<aop-project name="springdatajpa"/>
+<aop-project name="springcore"/>
+<aop-project name="springjdbc"/>
+</aop-reference-model>

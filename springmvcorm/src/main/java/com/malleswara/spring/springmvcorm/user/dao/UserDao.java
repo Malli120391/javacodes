@@ -1,0 +1,15 @@
+package com.malleswara.spring.springmvcorm.user.dao;
+
+import java.util.List;
+
+import com.malleswara.spring.springmvcorm.user.entity.User;
+
+public interface UserDao {
+	
+	int crate(User user);
+	
+	List<User> findUsers();
+	
+	User findUser(Integer id);
+
+}

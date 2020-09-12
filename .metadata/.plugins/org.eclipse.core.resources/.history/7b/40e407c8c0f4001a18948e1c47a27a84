@@ -1,0 +1,5 @@
+package org.malleswara.spring.springaop;
+
+public interface ProductService {
+
+}

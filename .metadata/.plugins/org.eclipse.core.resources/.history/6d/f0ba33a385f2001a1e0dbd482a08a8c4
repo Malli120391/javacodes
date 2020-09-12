@@ -1,0 +1,5 @@
+package com.malleswara.spring.springmvcorm.user.controller;
+
+public class UserController {
+
+}

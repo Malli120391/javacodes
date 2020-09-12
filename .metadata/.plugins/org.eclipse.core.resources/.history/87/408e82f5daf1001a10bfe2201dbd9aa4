@@ -1,0 +1,28 @@
+package com.malleswara.springmvc.controller;
+
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.servlet.ModelAndView;
+
+import com.malleswara.springmvc.dto.Employee;
+
+public class ListObject {
+	
+	@RequestMapping("/readList")
+	public ModelAndView sendoject() {
+	
+	ModelAndView modelAndView = new ModelAndView();
+
+	modelAndView.setViewName("dispalyList");
+	
+	Employee employee = new Employee();
+	employee.setId(10);
+	employee.setName("Malleswara");
+	employee.setSalary(10000);
+	modelAndView.addObject("employee",employee);
+	
+	
+	  return modelAndView;
+}
+	
+
+}

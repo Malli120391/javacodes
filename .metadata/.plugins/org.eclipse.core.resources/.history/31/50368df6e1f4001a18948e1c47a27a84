@@ -1,0 +1,20 @@
+package com.malleswara.spring.boot.springboot;
+
+import org.springframework.beans.factory.annotation.Autowired;
+
+import com.malleswara.spring.boot.springboot.dao.Dao;
+
+public class Service {
+	
+	Dao dao;
+	
+	@Autowired
+	Service(Dao dao){
+		this.dao = dao;
+		
+	}
+	public void save() {
+		dao.create();
+	}
+
+}

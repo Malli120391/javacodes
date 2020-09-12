@@ -1,0 +1,16 @@
+package net.javaguides.springmvc.form.config;
+
+import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
+
+
+
+@Configuration
+@EnableWebMvc
+@ComponentScan(basePackages = {
+    "net.javaguides.springmvc.form"
+})
+public class MVCConfig implements WebMvcConfigurer {
+	
+	
+
+}

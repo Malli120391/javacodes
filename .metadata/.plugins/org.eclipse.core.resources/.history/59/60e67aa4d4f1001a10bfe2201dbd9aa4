@@ -1,0 +1,13 @@
+package com.malleswara.springmvc.controller;
+
+import org.springframework.web.servlet.ModelAndView;
+
+public class ObjectController {
+	
+	public ModelAndView sendoject() {
+	
+	ModelAndView modelAndView = new ModelAndView();
+	modelandview.
+	  return modelAndView;
+}
+}

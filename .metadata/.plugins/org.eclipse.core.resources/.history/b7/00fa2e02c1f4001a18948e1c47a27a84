@@ -1,0 +1,7 @@
+package org.malleswara.spring.springaop;
+
+public interface ProductService {
+	
+	int multiplay(int num1, int mun2);
+
+}

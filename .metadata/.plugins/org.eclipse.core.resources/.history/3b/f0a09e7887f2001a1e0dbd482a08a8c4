@@ -1,0 +1,24 @@
+package com.malleswara.spring.springmvcorm.user.controller;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Controller;
+
+import com.malleswara.spring.springmvcorm.user.services.UserServices;
+
+@Controller
+public class UserController {
+	
+	@Autowired
+	private UserServices userservices;
+
+	public UserServices getUserservices() {
+		return userservices;
+	}
+
+	public void setUserservices(UserServices userservices) {
+		this.userservices = userservices;
+	}
+	
+	
+
+}

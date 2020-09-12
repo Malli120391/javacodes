@@ -1,0 +1,17 @@
+package org.malleswara.spring.springorm.producttest.dao.impl;
+
+import org.malleswara.spring.springorm.entity.ProductTest;
+import org.malleswara.spring.springorm.producttest.dao.ProductDAO;
+import org.springframework.orm.hibernate5.HibernateTemplate;
+
+public class ProducttestDAOImpl implements ProductDAO {
+
+	HibernateTemplate hibernatetemplate;
+	
+	@Override
+	public int create(ProductTest producttest) {
+		
+		return 0;
+	}
+
+}

@@ -1,0 +1,14 @@
+package org.malleswara.spring.springjavaconfig;
+
+import org.springframework.context.annotation.Bean;
+
+public class DaoConfig {
+	
+	@Bean
+	public Dao dao() {
+		return new Dao();
+		
+	}
+	
+
+}

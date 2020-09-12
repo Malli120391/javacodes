@@ -1,0 +1,14 @@
+package com.malleswara.springmvc.controller;
+
+import org.springframework.web.servlet.ModelAndView;
+
+public class UserController {
+
+	public ModelAndView showRegistrationPage() {
+		
+		ModelAndView modelAndView = new ModelAndView();
+		modelAndView.setViewName("");
+		
+	}
+
+}

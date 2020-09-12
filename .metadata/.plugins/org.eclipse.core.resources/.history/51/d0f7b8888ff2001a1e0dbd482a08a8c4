@@ -1,0 +1,9 @@
+package com.malleswara.spring.springmvcorm.user.services;
+
+import com.malleswara.spring.springmvcorm.user.entity.User;
+
+public interface UserServices {
+	
+	int save(User user);
+
+}

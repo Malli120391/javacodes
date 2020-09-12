@@ -1,0 +1,6 @@
+package com.malleswara.springmvc.controller;
+
+public class RequestParamContoller {
+	
+
+}

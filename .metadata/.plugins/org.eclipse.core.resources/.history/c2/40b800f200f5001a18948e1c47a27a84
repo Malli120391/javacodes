@@ -1,0 +1,36 @@
+package com.malleswara.spring.data;
+
+import java.util.Optional;
+
+import org.junit.jupiter.api.Test;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.boot.test.context.SpringBootTest;
+import org.springframework.context.ApplicationContext;
+
+import com.malleswara.spring.data.entities.Products;
+import com.malleswara.spring.data.repos.ProductsRepo;
+
+@SpringBootTest
+class SpringdatajpaApplicationTests {
+
+	@Autowired
+	ApplicationContext context;
+	
+	@Test
+	void saveProduct() {
+		ProductsRepo productsRepo = context.getBean(ProductsRepo.class);
+		Products entity = new Products();
+		entity.setId(1L);
+		entity.setName("Mi phone");
+		entity.setDescription("Good Phone");
+		entity.setPrice(1000d);
+		productsRepo.save(entity);
+	   
+		Optional<Products> findById = productsRepo.findById(1L);
+		System.out.println(findById);
+		
+		entity.setPrice(500d);
+		
+	}
+
+}

@@ -1,0 +1,5 @@
+package com.malleswara.springmvc.dto;
+
+public class Employee {
+
+}

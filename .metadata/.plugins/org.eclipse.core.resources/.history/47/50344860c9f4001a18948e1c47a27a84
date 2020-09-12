@@ -1,0 +1,17 @@
+package org.malleswarara.spring.springaop.test;
+
+import org.malleswara.spring.springaop.ProductService;
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
+
+public class Test {
+
+	public static void main(String[] args) {
+
+		ApplicationContext context = 
+				new ClassPathXmlApplicationContext("org/malleswarara/spring/springaop/test/springaopconfig.xml");
+		ProductService productSer = (ProductService) context.getBean("productService");
+		System.out.println(productSer.multiply(10, 5));
+	}
+
+}

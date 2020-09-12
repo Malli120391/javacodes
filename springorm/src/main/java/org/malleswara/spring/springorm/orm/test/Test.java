@@ -1,0 +1,32 @@
+package org.malleswara.spring.springorm.orm.test;
+
+import java.util.List;
+
+import org.malleswara.spring.springorm.entity.ProductTest;
+import org.malleswara.spring.springorm.producttest.dao.ProductDAO;
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
+
+public class Test {
+
+	public static void main(String[] args) {
+
+		ApplicationContext context = 
+				new ClassPathXmlApplicationContext("org/malleswara/spring/springorm/orm/test/springormconfig.xml");
+		ProductDAO productdao = (ProductDAO) context.getBean("productDao");
+		/*
+		 * ProductTest producttest = new ProductTest(); producttest.setId(1);
+		 * producttest.setName("testproduct"); producttest.setDesc("updated");
+		 * producttest.setPrice(500); //productdao.update(producttest);
+		 * //productdao.create(producttest); productdao.delete(producttest);
+		 */
+		//ProductTest productTest = productdao.find(1);
+		
+		List<ProductTest> list = productdao.findAll();
+		
+		System.out.println(list);
+		
+		
+	}
+
+}

@@ -1,0 +1,13 @@
+package org.malleswara.spring.springorm.producttest.dao.impl;
+
+import org.malleswara.spring.springorm.entity.ProductTest;
+import org.malleswara.spring.springorm.producttest.dao.ProductDAO;
+
+public class ProducttestDAOImpl implements ProductDAO {
+
+	@Override
+	public int create(ProductTest producttest) {
+		return 0;
+	}
+
+}

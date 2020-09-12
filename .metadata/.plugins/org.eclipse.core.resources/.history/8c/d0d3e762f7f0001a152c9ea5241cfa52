@@ -1,0 +1,31 @@
+package org.malleswara.spring.springorm.producttest.dao.impl;
+
+//import java.io.Serializable;
+
+import org.malleswara.spring.springorm.entity.ProductTest;
+import org.malleswara.spring.springorm.producttest.dao.ProductDAO;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.orm.hibernate5.HibernateTemplate;
+import org.springframework.stereotype.Component;
+import org.springframework.transaction.annotation.Transactional;
+
+@Component("productDao")
+public class ProducttestDAOImpl implements ProductDAO {
+
+	@Autowired
+	HibernateTemplate hibernatetemplate;
+	
+	@Override
+	@Transactional
+	public int create(ProductTest producttest) {
+		Integer result = (Integer) hibernatetemplate.save(producttest);
+		return result;
+	}
+
+	@Override
+	public void update(ProductTest producttest) {
+		hibernatetemplate.update(producttest);
+		
+	}
+
+}

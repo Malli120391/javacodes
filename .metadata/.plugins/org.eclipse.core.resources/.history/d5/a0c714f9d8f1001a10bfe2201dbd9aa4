@@ -1,0 +1,25 @@
+package com.malleswara.springmvc.controller;
+
+import org.springframework.web.servlet.ModelAndView;
+
+import com.malleswara.springmvc.dto.Employee;
+
+public class ObjectController {
+	
+	public ModelAndView sendoject() {
+	
+	ModelAndView modelAndView = new ModelAndView();
+
+	modelAndView.setViewName("dispalyObject");
+	
+	Employee employee = new Employee();
+	employee.setId(10);
+	employee.setName("Malleswara");
+	employee.setSalary(10000);
+	modelAndView.addObject("employee",employee);
+	
+	
+	  return modelAndView;
+}
+	
+}
